@@ -3,6 +3,8 @@
    <suppress until="2022-11-19">
       <notes><![CDATA[
       file name: hsqldb-2.7.0.jar
+      CVE: CVE-2022-41853
+      Reason: 2.7.1 not yet released
       ]]></notes>
       <packageUrl regex="true">^pkg:maven/org\.hsqldb/hsqldb@.*$</packageUrl>
       <cve>CVE-2022-41853</cve>
