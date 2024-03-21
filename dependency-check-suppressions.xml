@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
    <suppress until="2023-06-25Z">
-      <notes>
-         <![CDATA[
+      <notes><![CDATA[
          file name: ejs:3.1.9
          Reason: Not yet fixed
          See: https://github.com/mde/ejs/issues/720
-         ]]>
-      </notes>
+         ]]></notes>
       <packageUrl regex="true">^pkg:npm/ejs@.*$</packageUrl>
       <cve>CVE-2023-29827</cve>
+   </suppress>
+   <suppress>
+      <notes><![CDATA[
+         file name: json-20240303.jar
+         This version is > than the listed affected version.
+         ]]></notes>
+      <sha1>0ebb88e8fb5122b7506d5cf1d69f1ccdb790d22a</sha1>
+      <cve>CVE-2022-45688</cve>
+      <cve>CVE-2023-5072</cve>
    </suppress>
 </suppressions>
